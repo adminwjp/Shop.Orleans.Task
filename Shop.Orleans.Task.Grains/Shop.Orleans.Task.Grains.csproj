@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Shop.Tasks.Grains</RootNamespace>
+    <AssemblyName>Shop.Orleans.Task.Grains</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--<PackageReference Include="Microsoft.Orleans.OrleansCodeGenerator.Build" Version="3.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>-->
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="3.4.1" />
+    <PackageReference Include="Microsoft.Orleans.Runtime.Abstractions" Version="3.4.1" />
+    <PackageReference Include="Microsoft.Orleans.CodeGenerator.MSBuild" Version="3.4.1" PrivateAssets="all">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+
+    <ProjectReference Include="..\Shop.Orleans.Task.Interfaces\Shop.Orleans.Task.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
